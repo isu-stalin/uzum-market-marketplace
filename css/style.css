@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #f7f8fa;
+  border-bottom: 1px solid #ddd;
+}
+header .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 13px;
+  background-color: #f2f3f6;
+}
+header .top-header .loc-and-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .top-header .loc-and-info .location-block {
+  display: flex;
+  align-items: center;
+  color: #6b6b6b;
+}
+header .top-header .loc-and-info .location-block img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+header .top-header .loc-and-info .location-block span {
+  font-size: 13px;
+}
+header .top-header .loc-and-info a {
+  color: #6b6b6b;
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+header .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+}
+header .main-header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #7000ff;
+}
+header .main-header .logo img {
+  height: 32px;
+  margin-right: 8px;
+  display: block;
+}
+header .main-header .catalog-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #efe6fd;
+  color: #7000ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+header .main-header .catalog-button img {
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+header .main-header .search-container {
+  flex: 1;
+  display: flex;
+  margin: 0 20px;
+  max-width: 600px;
+}
+header .main-header .search-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+}
+header .main-header .search-container button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #f2f3f6;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+header .main-header .account-links {
+  display: flex;
+  align-items: center;
+}
+header .main-header .account-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+header .category-bar {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+header .category-bar div {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url("/mnt/data/98c37158-e16d-4873-a0be-73a38bc1db32.png") center/cover no-repeat;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+.carousel .carousel-arrow.left {
+  left: 10px;
+}
+.carousel .carousel-arrow.right {
+  right: 10px;
+}
+
+footer {
+  background-color: #fff;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+footer .footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer .footer-columns .footer-column {
+  flex: 1;
+  min-width: 180px;
+  margin: 10px;
+}
+footer .footer-columns .footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+footer .footer-columns .footer-column a {
+  display: block;
+  color: #777;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+footer .footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  header .main-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  header .main-header .search-container {
+    margin: 10px 0;
+    width: 100%;
+  }
+  header .main-header .account-links {
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
